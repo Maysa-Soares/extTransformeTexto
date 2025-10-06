@@ -3,9 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link css -->
+    <link rel="stylesheet" href="style.css">
+
     <title>Extensao TT</title>
   </head>
   <body>
-    <h1>test</h1>
+    <div class="container pai">
+      <header class="cabeçalho"></header>
+
+      <input
+        type="text"
+        name="text"
+        id="input-text"
+        class="input-text"
+        maxlength="500"
+        placeholder="Digite o texto aqui"
+        required
+      />
+
+      <div class="container-button">
+        <button>MAIUSCULAS</button>
+        <button>minusculas</button>
+      </div>
+
+      <div name="resilt" id="result" class="result">Resultado:</div>
+    </div>
+    <!-- link do java script -->
+    <script src="script.js"></script>
   </body>
 </html>
