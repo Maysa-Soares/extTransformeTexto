@@ -28,4 +28,21 @@ window.document.addEventListener("DOMContentLoaded", function () {
     document.querySelector("#input-text").value = "";
     document.querySelector("#result").textContent = "";
   });
+
+  // Botão Copiar
+  document.querySelector("#btnCopiar").addEventListener("click", function () {
+    let resultado = document.querySelector("#result").textContent;
+    if (resultado.trim() !== "") {
+      navigator.clipboard
+        .writeText(resultado)
+        .then(() => {
+          alert("Texto copiado para a área de transferência!");
+        })
+        .catch((err) => {
+          alert("Erro ao copiar texto: " + err);
+        });
+    } else {
+      alert("Nada para copiar!");
+    }
+  });
 });
