@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: "Quicksand", sans-serif;
   font-size: 12px;
+  font-weight: bold;
 
 /*border: solid 1px #e7c5c5;*/
 }
@@ -73,10 +74,11 @@
 }
 
 .cabecalho {
-  font-size: 4000px;
-  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 55px;
+  padding: 5px;
 }
-
 /* Rodapé */
 .container-footer {
   background-color: #f1f1f1;
